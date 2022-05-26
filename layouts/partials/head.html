@@ -18,6 +18,7 @@
   {{- $styles := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
   {{- if .Site.IsServer }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+  <link href="favicon.png" rel="shortcut icon">
   {{ else }}
   {{- $styles := $styles| minify | fingerprint | resources.PostProcess -}}
   <link

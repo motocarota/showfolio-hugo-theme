@@ -52,4 +52,19 @@ body {
       format("truetype"),
     /* Safari, Android, iOS */ url("/fonts/inter-v3-latin-700.svg#Inter")
       format("svg"); /* Legacy iOS */
+  -webkit-font-smoothing: subpixel antialiasing !important;
+}
+
+#fullpage {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-color: black;
 }
