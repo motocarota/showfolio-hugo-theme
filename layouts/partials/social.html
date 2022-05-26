@@ -180,5 +180,32 @@
       </a>
     </li>
     {{ end }}
+    {{ with .Site.Params.homepage.social.telegram }}
+    <li>
+      <a
+        href="{{.}}"
+        target="_blank"
+        rel="noopener"
+        aria-label="Telegram"
+        class="p-2 inline-block rounded-full border border-gray-300 text-gray-300 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:border-gray-600 dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-brand-dribbble"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M 19 4 L 0 14 L 6 16 L 13 11 L 8 17 L 15 24 L 20 4" />
+        </svg>
+      </a>
+    </li>
+    {{ end }}
   </ul>
 </section>
