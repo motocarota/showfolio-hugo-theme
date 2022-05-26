@@ -68,3 +68,7 @@ body {
   background-position: center center;
   background-color: black;
 }
+
+img {
+  margin: auto;
+}
